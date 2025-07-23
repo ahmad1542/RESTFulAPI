@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebApplication1.Controllers.Models;
+using WebApplication1.Data.Models;
 
 namespace WebApplication1.Data {
     public class AppDbContext : DbContext {
@@ -9,6 +9,8 @@ namespace WebApplication1.Data {
         }
         
         public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Item> Items { get; set; }
 
     }
 }

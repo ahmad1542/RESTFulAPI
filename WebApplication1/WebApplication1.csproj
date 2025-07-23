@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="D:\GitHub Repositories\RESTFulAPI\WebApplication1\Controllers\Models\Category.cs" Link="Category.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="8.0.18" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.18" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.18" />
@@ -20,10 +16,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\Models\" />
   </ItemGroup>
 
 </Project>

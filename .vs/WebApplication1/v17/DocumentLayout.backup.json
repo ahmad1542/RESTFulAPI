@@ -1,7 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHub Repositories\\WebApplication1\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\GitHub Repositories\\RESTFulAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BF9DC1D9-C1C2-4286-9353-70CF7A2F0DE0}|WebApplication1\\WebApplication1.csproj|d:\\github repositories\\restfulapi\\webapplication1\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF9DC1D9-C1C2-4286-9353-70CF7A2F0DE0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF9DC1D9-C1C2-4286-9353-70CF7A2F0DE0}|WebApplication1\\WebApplication1.csproj|d:\\github repositories\\restfulapi\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF9DC1D9-C1C2-4286-9353-70CF7A2F0DE0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF9DC1D9-C1C2-4286-9353-70CF7A2F0DE0}|WebApplication1\\WebApplication1.csproj|d:\\github repositories\\restfulapi\\webapplication1\\controllers\\models\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF9DC1D9-C1C2-4286-9353-70CF7A2F0DE0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\models\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF9DC1D9-C1C2-4286-9353-70CF7A2F0DE0}|WebApplication1\\WebApplication1.csproj|d:\\github repositories\\restfulapi\\webapplication1\\models\\mdlitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF9DC1D9-C1C2-4286-9353-70CF7A2F0DE0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\mdlitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 249,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GitHub Repositories\\RESTFulAPI\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "D:\\GitHub Repositories\\RESTFulAPI\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T16:38:29.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "mdlItem.cs",
+              "DocumentMoniker": "D:\\GitHub Repositories\\RESTFulAPI\\WebApplication1\\Models\\mdlItem.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\mdlItem.cs",
+              "ToolTip": "D:\\GitHub Repositories\\RESTFulAPI\\WebApplication1\\Models\\mdlItem.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\mdlItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T16:25:27.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ItemsController.cs",
+              "DocumentMoniker": "D:\\GitHub Repositories\\RESTFulAPI\\WebApplication1\\Controllers\\Models\\ItemsController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\Models\\ItemsController.cs",
+              "ToolTip": "D:\\GitHub Repositories\\RESTFulAPI\\WebApplication1\\Controllers\\Models\\ItemsController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\Models\\ItemsController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwCQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T15:17:45.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\GitHub Repositories\\RESTFulAPI\\WebApplication1\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\CategoriesController.cs",
+              "ToolTip": "D:\\GitHub Repositories\\RESTFulAPI\\WebApplication1\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T20:42:07.777Z",
+              "EditorCaption": ""
             }
           ]
         }

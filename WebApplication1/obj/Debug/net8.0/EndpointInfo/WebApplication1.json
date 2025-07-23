@@ -41,6 +41,11 @@
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Category"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/Category"
@@ -83,19 +88,36 @@
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryJsonPatchDocument"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryJsonPatchDocument"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryJsonPatchDocument"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
               }
             }
           }
@@ -109,6 +131,104 @@
       "delete": {
         "tags": [
           "Categories"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Items": {
+      "get": {
+        "tags": [
+          "Items"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Items"
+        ],
+        "parameters": [
+          {
+            "name": "Name",
+            "in": "query",
+            "schema": {
+              "maxLength": 100,
+              "type": "string"
+            }
+          },
+          {
+            "name": "Price",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "Notes",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "CategoryId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Image": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Image": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Items/{id}": {
+      "get": {
+        "tags": [
+          "Items"
         ],
         "parameters": [
           {
@@ -185,28 +305,53 @@
           "notes": {
             "type": "string",
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "CategoryJsonPatchDocument": {
-        "type": "object",
-        "properties": {
-          "operations": {
+          },
+          "items": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/CategoryOperation"
+              "$ref": "#/components/schemas/Item"
             },
-            "nullable": true,
-            "readOnly": true
-          },
-          "contractResolver": {
-            "$ref": "#/components/schemas/IContractResolver"
+            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "CategoryOperation": {
+      "Item": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          },
+          "image": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "categoryId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "category": {
+            "$ref": "#/components/schemas/Category"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Operation": {
         "type": "object",
         "properties": {
           "operationType": {
@@ -228,10 +373,6 @@
             "nullable": true
           }
         },
-        "additionalProperties": false
-      },
-      "IContractResolver": {
-        "type": "object",
         "additionalProperties": false
       },
       "OperationType": {
